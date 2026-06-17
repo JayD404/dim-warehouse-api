@@ -8,9 +8,9 @@
 function getDbConnection(): PDO
 {
     $host = getenv('DB_HOST');
-    $port = getenv('DB_PORT') ?: '5432';
+    $port = getenv('DB_PORT') ?: '6543';
     $dbname = getenv('DB_NAME') ?: 'postgres';
-    $user = getenv('DB_USER') ?: 'postgres';
+    $user = getenv('DB_USER') ?: 'postgres.voyzztkpsbtwprrjtstc';
     $password = getenv('DB_PASSWORD');
 
     if (!$host || !$password) {
